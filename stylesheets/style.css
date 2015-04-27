@@ -1,0 +1,164 @@
+.log {
+	width: 250px;
+	margin-left: 10px;
+}
+
+.panel-body {
+	max-height: 120px;
+	overflow-y: scroll;
+	padding:15px 0 !important;
+}
+
+.taken-panel {
+	max-height: 300px;
+}
+
+.panel-title {
+	margin: 0 !important;
+}
+
+.game-alert {
+	padding: 5px 10px;
+	border-bottom: 1px solid rgb(230,230,230); 
+}
+
+.piece, .taken-piece {
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.piece-R .myPiece, .piece-R .viewOpponentPiece, .taken-R {
+	 border: 3px solid #ef6e6e;
+	 background-color: rgba(255, 244, 247, 0.6);
+}
+
+.piece-B .myPiece, .piece-B .viewOpponentPiece, .taken-B  {
+  border: 3px solid #726df0;
+  background-color: rgba(226, 250, 255, 0.6);
+}
+
+.piece-R .opponentPiece {
+	border: 3px solid #ef6e6e;
+	background: rgba(240,109,109,0.8);
+}
+
+.piece-B .opponentPiece{
+	border: 3px solid #726df0;
+	background: rgba(113,108,240,0.8);
+}
+
+.select .myPiece  {
+	animation-name: selectEffect;
+	-webkit-animation-name: selectEffect;
+	animation-duration: 3s;
+	-webkit-animation-duration: 3s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	border: 3px solid #72f06d;
+}
+
+.selectAvailablePiece {
+	border: 1px solid #72f06d !important;
+}
+
+.availableSpace {
+	border: 1px solid #333;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	font-weight: 100;
+	margin: auto;
+}
+
+.myPieceSelection {
+	margin: auto;
+}
+
+.availablePiece {
+	width: 70px;
+	height: 70px;
+	border-style: solid;
+	border-width: 1px;
+	margin-right: 10px;
+	cursor: pointer;
+	position: relative;
+}
+
+.availablePiece.R {
+	border-color: #ef6e6e;
+}
+
+.availablePiece.B {
+	border-color: #726df0;
+}
+
+@keyframes selectEffect {
+}
+
+@-webkit-keyframes selectEffect {
+
+}
+.board {
+    width: 800px;
+}
+
+.board td {
+    width: 80px;
+    height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+   /* border: 1px solid #999; */
+}
+
+.myPiece, .opponentPiece, .taken-piece, .viewOpponentPiece {
+    
+    width: 70px;
+    height: 70px;
+}
+
+.myPiece img, .viewOpponentPiece img, .taken-piece img, .availablePiece img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+.myPiece .pieceRank, .viewOpponentPiece .pieceRank, .taken-piece .pieceRank, .availablePiece .pieceRank {
+    color: white;
+    font-weight: 900;
+    font-family: arial;
+    position: absolute;
+    bottom: -7px;
+	left: 50%;
+	margin-left: -14px;
+	background: -webkit-gradient(radial, 75 25, 75, 75 20, 40, from(#111), to(#444)) #444;
+	border-radius: 70px;
+	width: 28px;
+	line-height: 28px;
+	z-index: 234354;
+	font-size: 15px;
+}
+
+.taken-piece img {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -28px;
+}
+
+.taken-piece {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 13px;
+}
+
+.taken-piece .pieceRank, .availablePiece .pieceRank {
+	bottom: -15px;
+}
+
+.taken-piece h2 {
+	position: absolute;
+	line-height: 70px;
+	right: -50px;
+	margin: 0;
+}
